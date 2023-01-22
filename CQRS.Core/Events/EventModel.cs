@@ -12,6 +12,6 @@ namespace CQRS.Core.Events
         public string AggregateType { get; set; }
         public int Version { get; set; }
         public string EventType { get; set; }
-        public BaseEvent EvenData { get; set; }
+        public BaseEvent EventData { get; set; }
     }
 }
