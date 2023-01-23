@@ -22,7 +22,7 @@ namespace CQRS.Core.Domain
         private void ApplyChange(BaseEvent @event, bool isNew)
         {
             var method = this.GetType().GetMethod("Apply", new Type[] { @event.GetType()});
-            if (method != null)
+            if (method == null)
             {
                 throw new ArgumentNullException(nameof(method), $"The Apply method was not found in the aggregate for {@event.GetType().Name}!");
             }
