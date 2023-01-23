@@ -14,7 +14,7 @@ namespace Post.Query.Infrastructure.Repositories
             _contextFactory = contextFactory;
         }
 
-        public async async Task CreateAsync(CommentEntity comment)
+        public async Task CreateAsync(CommentEntity comment)
         {
             using DatabaseContext context = _contextFactory.CreateDbContext();
             context.Comments.Add(comment);
