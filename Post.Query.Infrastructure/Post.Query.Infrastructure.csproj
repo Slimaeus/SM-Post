@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Post.Common\Post.Common.csproj" />
     <ProjectReference Include="..\Post.Query.Domain\Post.Query.Domain.csproj" />
   </ItemGroup>
 
