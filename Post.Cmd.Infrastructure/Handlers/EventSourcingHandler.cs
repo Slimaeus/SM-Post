@@ -22,6 +22,7 @@ namespace Post.Cmd.Infrastructure.Handlers
             {
                 return aggregate;
             }
+            aggregate.ReplayEvents(events);
             aggregate.Version = events.Select(e => e.Version).Max();
             return aggregate;
         }
