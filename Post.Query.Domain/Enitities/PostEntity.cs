@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Post.Query.Domain.Enitities
 {
-    [Table("Post")]
+    [Table("Post", Schema = "dbo")]
     public class PostEntity
     {
         [Key]
