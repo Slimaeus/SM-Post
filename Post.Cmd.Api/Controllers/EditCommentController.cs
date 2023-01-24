@@ -11,10 +11,10 @@ namespace Post.Cmd.Api.Controllers
     [ApiController]
     public class EditCommentController : ControllerBase
     {
-        private readonly ILogger<EditMessageController> _logger;
+        private readonly ILogger<EditCommentController> _logger;
         private readonly ICommandDispatcher _commandDispatcher;
 
-        public EditCommentController(ILogger<EditMessageController> logger, ICommandDispatcher commandDispatcher)
+        public EditCommentController(ILogger<EditCommentController> logger, ICommandDispatcher commandDispatcher)
         {
             _logger = logger;
             _commandDispatcher = commandDispatcher;

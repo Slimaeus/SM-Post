@@ -11,10 +11,10 @@ namespace Post.Cmd.Api.Controllers
     [ApiController]
     public class RemoveCommentController : ControllerBase
     {
-        private readonly ILogger<EditMessageController> _logger;
+        private readonly ILogger<RemoveCommentController> _logger;
         private readonly ICommandDispatcher _commandDispatcher;
 
-        public RemoveCommentController(ILogger<EditMessageController> logger, ICommandDispatcher commandDispatcher)
+        public RemoveCommentController(ILogger<RemoveCommentController> logger, ICommandDispatcher commandDispatcher)
         {
             _logger = logger;
             _commandDispatcher = commandDispatcher;
